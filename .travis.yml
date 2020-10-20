@@ -11,4 +11,3 @@ install:
 
 scripts:
     - python manage.py test
-    
