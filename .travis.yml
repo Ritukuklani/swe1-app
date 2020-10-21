@@ -8,10 +8,12 @@ install:
 
 # before_script:
 # script:
-#   - python manage.py migrate
-#   - python manage.py collectstatic --noinput
+  # - python manage.py migrate
+  # - python manage.py collectstatic --noinput
 
 script:
+  - python manage.py migrate
+  - python manage.py collectstatic --noinput
   - black --check .
   - flake8 .
   - python manage.py test 
