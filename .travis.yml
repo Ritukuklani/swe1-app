@@ -19,5 +19,5 @@ script:
 # after_success: 
 #   - coveralls
 
-after_script:
+after_success:
   - coveralls
